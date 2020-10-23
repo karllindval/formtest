@@ -21,12 +21,11 @@ function submitForm(e){
 
   //Get value
   var name = getInputVal('name');
-  var helpful = getInputVal('helpful');
   var email = getInputVal('email');
   var message = getInputVal('message');
 
   // Save message
-  saveMessage(helpful, message, name, email);
+  saveMessage(message, name, email);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -46,7 +45,7 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(helpful, message, name, email){
+function saveMessage(message, name, email){
   const HELPFUL = document.querySelector('input[name="helpful"]:checked').value;
   var newMessageRef = messagesRef.push();
   newMessageRef.set({

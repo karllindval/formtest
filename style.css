@@ -74,7 +74,7 @@ ul {
 }
 
 
-p.message-field.full, p.name-field, p.email-field {
+p.message-field.full, p.name-field, p.email-field, p.radio-field {
     margin-bottom: 12px !important;
     display: block;
 }

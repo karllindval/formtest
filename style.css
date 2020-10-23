@@ -84,7 +84,9 @@ ul {
 }
 
 .radio-field label {
-    display: inline !important;
+    display: inline-block !important;
+    width: 24px !important;
+    margin-bottom: 8px;
 }
 
 

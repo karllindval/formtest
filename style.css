@@ -149,9 +149,10 @@ span {
   background: #ffffff;
   font-family: 'Ericsson Hilda', sans-serif;
   font-size: 14px;
-  text-align: center;
-  color: #fff;
+  text-align: left;
+  color: #242424;
   border-radius: 0px;
+	border: 1px solid #878787;
   display: none;
 	box-shadow: 0 0 20px 0 rgba(0,0,0, .1);
 }

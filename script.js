@@ -46,10 +46,11 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, company, email, phone, message){
+function saveMessage(helpful, message, name, email){
+  const HELPFUL = document.querySelector('input[name="helpful"]:checked').value;
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
-    helpful: helpful,
+    helpful: HELPFUL,
     message: message,
     name: name,
     email: email

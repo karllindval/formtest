@@ -21,13 +21,12 @@ function submitForm(e){
 
   //Get value
   var name = getInputVal('name');
-  var company = getInputVal('company');
+  var helpful = getInputVal('helpful');
   var email = getInputVal('email');
-  var phone = getInputVal('phone');
   var message = getInputVal('message');
 
   // Save message
-  saveMessage(name, company, email, phone, message);
+  saveMessage(helpful, message, name, email);
 
   // Show alert
   document.querySelector('.alert').style.display = 'block';
@@ -50,10 +49,9 @@ function getInputVal(id){
 function saveMessage(name, company, email, phone, message){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
+    helpful: helpful,
+    message: message,
     name: name,
-    company: company,
-    email: email,
-    phone: phone,
-    message: message
+    email: email
   });
 }

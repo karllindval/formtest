@@ -73,6 +73,20 @@ ul {
   color: #242424;
 }
 
+.radio-field span {
+    margin-bottom: 12px !important;
+    display: block;
+}
+
+.radio-field input {
+    display: inline !important;
+    width: auto !important;
+}
+
+.radio-field label {
+    display: inline !important;
+}
+
 
 p.message-field.full, p.name-field, p.email-field, p.radio-field {
     margin-bottom: 12px !important;

@@ -2,15 +2,14 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Contact Form + Firebase</title>
+  <title>Using Firebase as Database for feedback submissions</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div class="container">
-  <h1 class="title">Using Firebase as Database for feedback submissions</h1>
-  <div class="wrapper animated bounceInLeft">
+  <div class="wrapper animated bounceInBottom">
     <div class="contact">
       <h3 class="contact-us">Share your feedback</h3>
       <div class="alert">Thank you for helping us improve your experience, we'll come back to you as soon as possible!</div>
@@ -26,12 +25,10 @@
           <textarea placeholder="What could we improve?" name="message" rows="5" id="message"></textarea>
         </p>
         <p class="name-field">
-          <label>Name <span>*</span></label>
-          <input type="text" name="name" id="name" required>
+          <input placeholder="Name*" type="text" name="name" id="name" required>
         </p>
         <p class="email-field">
-          <label>Email <span>*</span></label>
-          <input type="email" name="email" id="email" required>
+          <input placeholder="Email*" type="email" name="email" id="email" required>
         </p>
         <p class="required-field">Required field <span>*</span></p>
         <p class="submit-button">
